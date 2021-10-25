@@ -2,3 +2,6 @@
     font-family: 'Megrim', cursive;
     float:right;
 }
+.nav-item {
+    list-style-type: none;
+  }
