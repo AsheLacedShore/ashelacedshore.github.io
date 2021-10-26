@@ -1,8 +1,8 @@
-function clicked() {
-    //console.log(document.getElementById("topnav").hasChildNodes());
-    var topnav = document.getElementById("topnav");
-    topnav.onclick = function() {
-        console.log("DIV clicked!");
-    }
-    topnav.click();
+function reveal() {    
+    var accordion1 = document.getElementById("a1") ;
+    console.log(accordion1);
+    accordion1.click();
+    
+
+
 }
