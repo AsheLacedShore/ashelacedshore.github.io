@@ -11,66 +11,130 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light topnav">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">I WILL PUT STUFF HERE</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              MENU
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" onclick="reveal()" href="#">Art</a></li>
-              <li><a class="dropdown-item" href="#">Contact</a></li>
-              <li><a class="dropdown-item" href="#">About</a></li>
-            </ul>
-          </li>
-        </ul>
+  <html lang="en">
+    <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <style>
+        /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+        .navbar {
+          margin-bottom: 50px;
+          border-radius: 0;
+        }
+        
+        /* Remove the jumbotron's default bottom margin */ 
+         .jumbotron {
+          margin-bottom: 0;
+        }
+       
+        /* Add a gray background color and some padding to the footer */
+        footer {
+          background-color: #f2f2f2;
+          padding: 25px;
+        }
+      </style>
+    </head>
+    <body>
+    
+    <div class="jumbotron">
+      <div class="container text-center">
+        <h1>Chelsea</h1>      
+        <p>STUFF COULD GO HERE</p>
       </div>
     </div>
-  </nav>
-
-  <div class="accordion" id="accordionExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button" type="button" id="a1" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Accordion Item #1
-        </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>There will be art here.</strong> 
+    
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">ART</a></li>
+            <li><a href="#">DOODLES</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+          </ul>
         </div>
       </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Accordion Item #2
-        </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>There will be an email here.</strong> 
+    </nav>
+    
+    <div class="container">    
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">EMBROIDERY SOON</div>
+            <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer">WILL BE ADDED EVENTUALLY</div>
+          </div>
+        </div>
+        <div class="col-sm-4"> 
+          <div class="panel panel-danger">
+            <div class="panel-heading">DOODLES</div>
+            <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer">ART TITLES</div>
+          </div>
+        </div>
+        <div class="col-sm-4"> 
+          <div class="panel panel-success">
+            <div class="panel-heading">ART STUFF</div>
+            <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer">YOU CAN ORDER ART HERE WHEN I'M DONE</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Accordion Item #3
-        </button>
-      </h2>
-      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>There will be about info here.</strong> 
+    </div><br>
+    
+    <div class="container">    
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">BLAH BLAH BLAH</div>
+            <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer">SILLY PLACEHOLDER</div>
+          </div>
+        </div>
+        <div class="col-sm-4"> 
+          <div class="panel panel-primary">
+            <div class="panel-heading">SOMETHING ELSE WILL GO HERE</div>
+            <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer">FREE STICKER WITH ART PURCHASE</div>
+          </div>
+        </div>
+        <div class="col-sm-4"> 
+          <div class="panel panel-primary">
+            <div class="panel-heading">BLACK FRIDAY DEAL</div>
+            <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer">STUFF CAN GO HERE</div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-
+    </div><br><br>
+    
+    <footer class="container-fluid text-center">
+      <p>Online Store Copyright</p>  
+      <form class="form-inline">Get deals:
+        <input type="email" class="form-control" size="50" placeholder="Email Address">
+        <button type="button" class="btn btn-danger">Sign Up</button>
+      </form>
+    </footer>
+    
+    </body>
+    </html>
+  
 <script type="text/javascript" src="main.js"></script>
 
